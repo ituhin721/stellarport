@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Documentation - DEV</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="dev-logo.jpg">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">DEV</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tokenomics.html">Tokenomics</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="how-to-buy.html">How to Buy</a></li>
+      <li><a href="developers.html">Developers</a></li>
+      <li><a href="docs.html" class="active">Docs</a></li>
+      <li><a href="grant.html">Apply for Grant</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero docs-hero">
+  <h1 class="hero-title">DEV Token Docs</h1>
+  <p class="hero-subtitle">Technical reference for integrating and building with the DEV Token on Stellar.</p>
+</section>
+
+<section class="docs-container">
+  <div class="docs-section">
+    <h2>1. Overview</h2>
+    <p>The DEV Token is a Stellar-based asset supporting open-source development. It can be used for funding projects, tipping contributors, and as a utility token in developer tools and platforms.</p>
+  </div>
+
+  <div class="docs-section">
+    <h2>2. Token Details</h2>
+    <ul>
+      <li><strong>Asset Code:</strong> DEV</li>
+      <li><strong>Issuer:</strong> GCQHKNJG77PQAJOJXMSI3RJ63CJC42IOJDOFRDXXULFFDZURMAQX4IDV </li>
+      <li><strong>Home Domain:</strong> stellarport.pages.dev</li>
+    </ul>
+  </div>
+
+  <div class="docs-section">
+    <h2>3. Add to Wallet</h2>
+    <p>You can manually add the DEV token in Stellar wallets like Lobstr, Freighter, or Albedo by entering the Asset Code and Issuer Address.</p>
+  </div>
+
+  <div class="docs-section">
+    <h2>4. stellar.toml File</h2>
+    <p>Ensure your home domain is set and your <code>stellar.toml</code> is hosted at <code>https://stellarport.pages.dev/.well-known/stellar.toml</code>. This file should include:</p>
+    <pre>
+[DOCUMENTATION]
+ORG_NAME="DEV Foundation"
+ORG_DESC="DEV supports developers building open-source Stellar apps through funding, tools, and infrastructure."
+ORG_URL="https://stellarport.pages.dev"
+ORG_LOGO="https://stellarport.pages.dev/dev-logo.jpg"
+    </pre>
+  </div>
+
+  <div class="docs-section">
+    <h2>5. Integration</h2>
+    <p>You can interact with the DEV token using the Stellar SDK:</p>
+    <pre><code class="language-js">
+// Using Stellar SDK
+const server = new StellarSdk.Server('https://horizon.stellar.org');
+const asset = new StellarSdk.Asset('DEV', 'GCQHKNJG77PQAJOJXMSI3RJ63CJC42IOJDOFRDXXULFFDZURMAQX4IDV');
+    </code></pre>
+  </div>
+
+  <div class="docs-section">
+    <h2>6. Resources</h2>
+    <ul>
+      <li><a href="https://developers.stellar.org/docs" target="_blank">Stellar Developer Docs</a></li>
+      <li><a href="https://stellar.expert/explorer/public/asset/DEV-GCQHKNJG77PQAJOJXMSI3RJ63CJC42IOJDOFRDXXULFFDZURMAQX4IDV" target="_blank">StellarExpert</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 DEV Token | Open source power for developers | DEV Foundation</p>
+</footer>
+
+</body>
+</html>

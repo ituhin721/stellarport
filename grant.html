@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apply for Grant - DEV</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="dev-logo.jpg">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">DEV</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tokenomics.html">Tokenomics</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="how-to-buy.html">How to Buy</a></li>
+      <li><a href="developers.html">Developers</a></li>
+      <li><a href="docs.html">Docs</a></li>
+      <li><a href="grant.html" class="active">Apply for Grant</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero grant-hero">
+  <h1 class="hero-title">Apply for a DEV Grant</h1>
+  <p class="hero-subtitle">Funding for projects that move open-source Stellar development forward.</p>
+</section>
+
+<section class="form-container">
+  <form class="grant-form" action="https://formspree.io/f/mrbqepqe" method="POST">
+    <label for="fullname">Full Name / Team Name</label>
+    <input type="text" id="fullname" name="fullname" required />
+
+    <label for="email">Contact Email</label>
+    <input type="email" id="email" name="_replyto" required />
+
+    <label for="project">Project Name</label>
+    <input type="text" id="project" name="project" required />
+
+    <label for="summary">Project Summary</label>
+    <textarea id="summary" name="summary" rows="4" required></textarea>
+
+    <label for="goals">Goals & Milestones</label>
+    <textarea id="goals" name="goals" rows="4" required></textarea>
+
+    <label for="budget">Requested Grant Amount (in DEV)</label>
+    <input type="text" id="budget" name="budget" required />
+
+    <label for="github">GitHub / Project Link (if any)</label>
+    <input type="url" id="github" name="github" />
+
+    <label for="timeline">Estimated Timeline</label>
+    <input type="text" id="timeline" name="timeline" required />
+
+    <button type="submit" class="button">Submit Application</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 DEV Token | Supporting builders through the DEV Foundation</p>
+</footer>
+
+</body>
+</html>
