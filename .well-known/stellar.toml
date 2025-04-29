@@ -1,0 +1,28 @@
+VERSION="2.0"
+
+NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
+
+ACCOUNTS=[
+"GCQHKNJG77PQAJOJXMSI3RJ63CJC42IOJDOFRDXXULFFDZURMAQX4IDV",
+"GCNPMM6ST4Z6VKA4JAK3R3IHOHUS7MIC5R44OGJZ726X6H2ZCZI7IDEH",
+]
+
+[DOCUMENTATION]
+ORG_NAME="DEV Foundation"
+ORG_URL="https://stellarport.pages.dev/"
+ORG_LOGO="https://stellarport.pages.dev/dev-logo.jpg"
+ORG_DESCRIPTION="DEV is a decentralized organization dedicated to supporting developers building on Stellar and Web3 ecosystems. Our mission is to empower creators through funding, open tools, community initiatives, and fast, low-cost token infrastructure. We aim to make blockchain development more accessible, sustainable, and impactful for projects of all sizes."
+ORG_OFFICIAL_EMAIL="team@stellarport.pages.dev"
+
+[[CURRENCIES]]
+code="DEV"
+issuer="GCQHKNJG77PQAJOJXMSI3RJ63CJC42IOJDOFRDXXULFFDZURMAQX4IDV"
+display_decimals=7
+desc="DEV is a Stellar-based token created to empower developers, support innovation, and foster growth in open-source Web3 applications."
+name="DEV Token"
+status="live"
+image="https://stellarport.pages.dev/dev-logo.jpg"
+
+[[PRINCIPALS]]
+email="team@stellarport.pages.dev"
+twitter="devcomms"
