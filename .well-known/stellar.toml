@@ -1,11 +1,12 @@
 VERSION="2.0"
-
 NETWORK_PASSPHRASE="Public Global Stellar Network ; September 2015"
 
 ACCOUNTS=[
 "GCQHKNJG77PQAJOJXMSI3RJ63CJC42IOJDOFRDXXULFFDZURMAQX4IDV",
 "GCNPMM6ST4Z6VKA4JAK3R3IHOHUS7MIC5R44OGJZ726X6H2ZCZI7IDEH",
 ]
+
+FEDERATION_SERVER="https://stellarport.pages.dev/federation"
 
 [DOCUMENTATION]
 ORG_NAME="DEV Foundation"
@@ -21,6 +22,8 @@ display_decimals=7
 desc="DEV is a Stellar-based token created to empower developers, support innovation, and foster growth in open-source Web3 applications."
 name="DEV Token"
 status="live"
+type = "utility"
+conditions = "Fixed supply. No future minting. Fully backed for ecosystem grants and project incentives."
 image="https://stellarport.pages.dev/dev-logo.jpg"
 
 [[PRINCIPALS]]
