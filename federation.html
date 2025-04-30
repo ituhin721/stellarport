@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Federation - DEV Token</title>
+  <link rel="icon" type="image/png" href="dev-logo.jpg">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #0e0e12;
+      color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #58c4f6;
+    }
+    .example {
+      background: #1a1a1d;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    code {
+      color: #c3f384;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Stellar Federation for DEV Token</h1>
+    <p>We've enabled federation so you can send DEV using easy-to-read Stellar addresses like:</p>
+    <div class="example">
+      <code>team*stellarport.pages.dev</code>
+    </div>
+
+    <h2>How it works</h2>
+    <p>Instead of using long account IDs, you can use a name like:</p>
+    <ul>
+      <li><code>team*stellarport.pages.dev</code> → Issuer Account</li>
+      <li><code>grant*stellarport.pages.dev</code> → Distribution Account</li>
+    </ul>
+
+    <h2>Test it</h2>
+    <p>Try querying:</p>
+    <div class="example">
+      <code>https://stellarport.pages.dev/federation?q=team*stellarport.pages.dev&type=name</code>
+    </div>
+
+    <h2>Supported Accounts</h2>
+    <ul>
+      <li><strong>team*</strong> → Developer Foundation / Issuer</li>
+      <li><strong>grant*</strong> → Distribution + Grants</li>
+    </ul>
+  </div>
+</body>
+</html>
